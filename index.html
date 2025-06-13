@@ -1,82 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Yalit</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>YALIT</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <img src="Resources/Mainpng.png" alt="" />
+      </div>
+      <div class="desnav">
+        <ul>
+          <li> <a href="index.html" style="text-decoration: none; color: #3C096C;">Home</a> </li>
+          <li> <a href="test.html" style="text-decoration: none; color: #3C096C;">About us</a> </li>
+          <li> <a href="#Feature" style="text-decoration: none; color: #3C096C;">Features</a> </li>
+          <li> <a href="#contact-form-container" style="text-decoration: none; color: #3C096C;">Contact us</a> </li>
+        </ul>
+     <button onclick="window.location.href='test.html'">Shop now</button>
+      </div>
+      <button class="mobile-menu-toggle">☰</button>
 
-    body {
-      height: 100vh;
-      background-color: #f3f4f6;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .container {
-      background: #fff;
-      padding: 40px;
-      border-radius: 20px;
-      text-align: center;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      max-width: 400px;
-      width: 90%;
-    }
-
-    .logo img{
-      width: 200px;
-      margin: 0 auto ;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-      color: #111827;
-    }
-
-    p {
-      color: #4b5563;
-      margin-bottom: 30px;
-    }
-
-    .socials {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .socials a {
-      color: #6b7280;
-      font-size: 20px;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-    .socials a img {
-      width: 30px;
-}
-    .socials a:hover {
-      color: #1f2937;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="logo">
-      <img src="./images/V2.png" alt="">
     </div>
-    <h1>Coming Soon</h1>
-    <p>We’re getting ready to launch. Stay tuned!</p>
-    <div class="socials">
-      <a href="https://www.instagram.com/yalitstartup/" target="_blank" aria-label="Instagram"><img src="./images/instagram.png" alt=""></a>
-      <a href="" aria-label="linkedin" target="_blank"><img src="./images/linkedin.png" alt=""></a>
+    <div class="hero">
+      <button class="Top">YALIT</button>
+      <h1>The last Time You'll ever Wipe Your Glass</h1>
+      <p>
+We develop smart, eco-friendly technologies to simplify daily life, reduce maintenance, and enhance clarity—designed for modern users, smart homes, and sustainable living.
+
+      </p>
+      <div class="buttons">
+        <button class="Explore">Explore more</button>
+        <button class="Shop" onclick="window.location.href='test.html'">Shop now</button>
+      </div>
     </div>
-  </div>
-</body>
+    <div class="Demo" id="Demo">
+      <button class="Top">Demo</button>
+      <h1>How It Works</h1>
+      <p>
+        Forget wipes and sprays—our smart lenses do the cleaning for you using
+        cutting-edge nanotechnology.
+      </p>
+    </div>
+    <main>
+      <div class="container">
+        <div class="image-container">
+          <img
+            class="image-before slider-image"
+           src="Resources/before.png"
+            alt="color photo"
+          />
+          <img
+            class="image-after slider-image"
+           src="Resources/after.png"
+            alt="black and white"
+          />
+        </div>
+        <!-- step="10" -->
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          aria-label="Percentage of before photo shown"
+          class="slider"
+        />
+        <div class="slider-line" aria-hidden="true"></div>
+        <div class="slider-button" aria-hidden="true">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            viewBox="0 0 256 256"
+          >
+            <rect width="256" height="256" fill="none"></rect>
+            <line
+              x1="128"
+              y1="40"
+              x2="128"
+              y2="216"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></line>
+            <line
+              x1="96"
+              y1="128"
+              x2="16"
+              y2="128"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></line>
+            <polyline
+              points="48 160 16 128 48 96"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></polyline>
+            <line
+              x1="160"
+              y1="128"
+              x2="240"
+              y2="128"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></line>
+            <polyline
+              points="208 96 240 128 208 160"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></polyline>
+          </svg>
+        </div>
+      </div>
+    
+    </main>
+    <div class="Feature" id="Feature">
+      <button class="Top">Features</button>
+      <h1>How Our Glasses Help You</h1>
+      <p>Keep your lenses clear with smart, easy technology.</p>
+      <div class="fea-cont">
+        <div id="feat1">
+          <div class="icon">
+            <img src="Resources/Scope.png" alt="" />
+          </div>
+          <h2>Smudge-Repellent Coating</h2>
+        </div>
+        <div id="feat2">
+          <div class="icon">
+            <img src="Resources/Droplet.png" alt="" />
+          </div>
+          <h2>Water-Resistant Nano-Layer</h2>
+        </div>
+        <div id="feat3">
+          <div class="icon">
+            <img src="Resources/Shield.png" alt="" />
+          </div>
+          <h2>Scratch-Resistant Protection</h2>
+        </div>
+        <div id="feat4">
+          <div class="icon">
+            <img src="Resources/Chams.png" alt="" />
+          </div>
+          <h2>Long-Lasting Clarity</h2>
+        </div>
+      </div>
+    </div>
+      <div class="prdct" id="prdct">
+      <button class="Top">Products</button>
+      <h1>Our Products</h1>
+      <p class="prp">
+        Tired of wiping lenses? Ours clean themselves with invisible nanotechnology.
+      </p>
+      <div class="prdctcont">
+        <div class="product-card">
+    <div class="product-image">
+      <img src="Resources/Frame 39.png" alt="Product Name" />
+    </div>
+    <div class="product-info">
+      <h3>Eyeglass Film</h3>
+      <p>Customize a self-cleaning protection for your Eyeglass. keeps lenses spotless without daily wiping.</p>
+    </div>
+    <div class="CTA">
+     <div class="price">
+      <p>1900 DA</p>
+      <p>1450 DA</p>
+      </div>
+            <button onclick="window.location.href='test.html'">Purchase</button>
+    </div>
+        </div>
+         <div class="product-card">
+    <div class="product-image">
+      <img src="Resources/Frame 35.png" alt="Product Name" />
+    </div>
+    <div class="product-info">
+      <h3>Phone Screen Film</h3>
+      <p>Customize a self-cleaning protection for your phone screen. keeps lenses spotless without daily wiping.</p>
+    </div>
+    <div class="CTA">
+      <div class="price">
+      <p>2000 DA</p>
+      <p>1550 DA</p>
+      </div>
+      <button onclick="window.location.href='test.html'" >Purchase</button>
+    </div>
+         </div>
+      </div>
+    </div>
+
+
+  <!-- form -->
+   <div class="contact-form-container" id="contact-form-container">
+  <h1>Contact us</h1>
+  <p>Get in touch with us</p>
+  <form class="contact-form">
+    <div class="form-grid">
+      <!-- Left Column -->
+      <div class="input-group">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone">
+      </div>
+      
+      <!-- Right Column -->
+      <div class="message-group">
+        <textarea placeholder="Your message..." required></textarea>
+      </div>
+    </div>
+    <button type="submit" onclick="window.location.href='index.html'">Send Message</button>
+  </form>
+</div>
+<footer>
+  <img src="Resources/WHT3.png" alt="">
+<p>© 2025 YALIT I All Rights Reserved</p>
+
+<div>
+  <a href="https://www.instagram.com/yalitstartup/" target="_blank">Instagram</a>
+  <a href="https://www.linkedin.com/company/107374986" target="_blank">Linkedin</a>
+</div>
+</footer>
+
+
+<script>
+const container = document.querySelector('.container');
+document.querySelector('.slider').addEventListener('input', (e) => {
+  container.style.setProperty('--position', `${e.target.value}%`);
+})
+document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
+  const nav = document.querySelector('.desnav');
+  nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+});
+</script>
+  </body>
 </html>
