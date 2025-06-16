@@ -231,7 +231,7 @@ button{
     border: 1px solid #BA89E8 ;
 }
 #feat2{
-    border: 1px solid #ADE4F9 ;
+    border: 1px solid #adf9b6 ;
 }
 #feat3{
     border: 1px solid #7F7F7D ;
@@ -251,7 +251,7 @@ button{
 #feat2 .icon{
     width: 70px;
     background-color: white;
-    box-shadow: 0 0 20px #ade3f973 ;
+    box-shadow: 0 0 20px #adf9c273 ;
 }
 #feat3 .icon{
     width: 70px;
@@ -761,6 +761,11 @@ footer img{
         .product-card {
             width: 100%;
         }
-
+.shop{
+  font-size: 16px;
+}
+.Explore{
+  font-size: 16px;
+}
 } 
 
