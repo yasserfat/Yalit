@@ -224,7 +224,6 @@ button{
 }
 .fea-cont div h2{
    font-size: 18px;
-
 }
 #feat1{
 
@@ -636,6 +635,9 @@ footer div a {
   color: white;
 }
 @media (max-width: 1000px) {
+  .fea-cont div{
+    padding: 10px;
+}
   p{
     font-size: 18px;
   }
@@ -713,6 +715,11 @@ footer img{
 
 
 @media (max-width: 600px) {
+  
+.fea-cont div h2{
+   font-size: 16px;
+}
+
      .fea-cont{
    display: grid;
    justify-content: center;
